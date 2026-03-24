@@ -179,9 +179,13 @@ AOS.init({ duration: 1000, once: true });
 <script>
 const text = "Hi, I'm Mahesh Paila";
 let i = 0;
+const typingEl = document.getElementById("typing");
+
+typingEl.innerHTML = "";
+
 function typing() {
   if (i < text.length) {
-    document.getElementById("typing").innerHTML += text.charAt(i);
+    typingEl.innerHTML += text.charAt(i);
     i++;
     setTimeout(typing, 80);
   }
