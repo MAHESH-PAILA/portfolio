@@ -146,8 +146,9 @@ html {
 .buttons {
   display: flex;
   gap: 15px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .buttons a {
