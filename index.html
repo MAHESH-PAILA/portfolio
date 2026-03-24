@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mahesh Portfolio</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+<!-- Particle Background -->
+<div id="particles-js"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <h2>Portfolio</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+
+  <div class="hero-content">
+
+    <!-- Left Side -->
+    <div class="hero-text">
+      <h1 id="typing"></h1>
+      <p class="subtitle" data-aos="fade-up">Aspiring Software Developer</p>
+      <div class="buttons">
+        <a href="https://linkedin.com/in/maheshp703" target="_blank">LinkedIn</a>
+        <a href="mailto:maheshpaila383@gmail.com">Email</a>
+        <a href="Mahesh_Resume.pdf" download>Resume</a>
+        <a href="https://github.com/MAHESH-PAILA" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Right Side (Photo) -->
+    <div class="hero-img">
+      <img src="myphoto.jpg" alt="Mahesh">
+    </div>
+
+  </div>
+
+</header>
+
+<!-- About -->
+<section id="about" class="section" data-aos="fade-up">
+  <h2>About</h2>
+  <p>Dedicated fresher with strong problem-solving skills and internship experience.</p>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="section" data-aos="fade-up">
+  <h2>Experience</h2>
+
+  <div class="card" data-aos="zoom-in">
+    <h3>Web Development Intern - Tech Mahindra</h3>
+    <p>
+      Worked on building responsive dashboards using HTML, CSS, JavaScript, and React.js.
+      Improved user interface design and ensured smooth user experience across devices.
+      Gained hands-on experience in performance optimization, debugging, and deployment using GitHub.
+    </p>
+  </div>
+
+  <div class="card" data-aos="zoom-in">
+    <h3>Software Engineering Intern - Efftronics Systems</h3>
+    <p>
+      Worked on backend development and optimization using Java and C++.
+      Applied Data Structures and Algorithms to improve performance of data processing modules.
+      Debugged and optimized existing code to handle large datasets efficiently.
+    </p>
+  </div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section" data-aos="fade-up">
+  <h2>Projects</h2>
+
+  <div class="card" data-aos="zoom-in">
+    <h3>Online Quiz Application</h3>
+    <p>
+      Developed an interactive quiz application using HTML, CSS, and JavaScript.
+      Implemented features like dynamic question loading, timer, and score tracking.
+      Designed a user-friendly interface for better user experience.
+    </p>
+  </div>
+
+  <div class="card" data-aos="zoom-in">
+    <h3>Customer Purchase Analysis</h3>
+    <p>
+      Analyzed retail transaction data using Python (Pandas, NumPy).
+      Identified customer behavior patterns and top-selling products.
+      Created interactive dashboards using Power BI for data visualization.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- Skills -->
+<section id="skills" class="section" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Power BI</span>
+  </div>
+</section>
+
+<!--Education-->
+<section id="education" class="section" data-aos="fade-up">
+  <h2>Education</h2>
+
+  <div class="card" data-aos="zoom-in">
+    <p><b>B-Tech (Mechanical Engineering)</b></p>
+    <p>Vignan’s Institute of Information Technology</p>
+    <p>GPA: 7.23 (2021 – 2025)</p>
+  </div>
+
+  <div class="card" data-aos="zoom-in">
+    <p><b>Intermediate</b></p>
+    <p>Sri Chaitanya Junior College</p>
+    <p>GPA: 8.56 (2018 – 2020)</p>
+  </div>
+
+  <div class="card" data-aos="zoom-in">
+    <p><b>10th Class</b></p>
+    <p>Sarvagnya High School</p>
+    <p>GPA: 9.5 (2017 – 2018)</p>
+  </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p>Email: maheshpaila383@gmail.com</p>
+  <p>Phone: 7032921067</p>
+</section>
+
+<div class="cursor"></div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+</script>
+
+<script>
+const text = "Hi, I'm Mahesh Paila";
+let i = 0;
+function typing() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 80);
+  }
+}
+typing();
+</script>
+
+<script>
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 60 },
+    size: { value: 3 },
+    move: { speed: 2 },
+    line_linked: { enable: true }
+  }
+});
+</script>
+
+</body>
+</html>
