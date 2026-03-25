@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mahesh Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="particles-js"></div>
+  <div class="cursor"></div>
 
   <nav class="navbar">
-    <h2>Portfolio</h2>
-    <ul>
+    <div class="logo">Portfolio</div>
+
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -32,8 +37,8 @@
         <div class="buttons">
           <a href="https://linkedin.com/in/maheshp703" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="mailto:maheshpaila383@gmail.com">Email</a>
-          <a href="Mahesh_Resume.pdf" download>Resume</a>
-          <a href="https://github.com/MAHESH-PAILA" target="_blank">GitHub</a>
+          <a href="Mahesh_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="https://github.com/MAHESH-PAILA" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
 
@@ -60,18 +65,18 @@
     <div class="card">
       <h3>Web Development Intern - IBM [AICTE]</h3>
       <p>
-        Worked on building responsive dashboards using HTML, CSS, JavaScript, and React.js.
-        Improved user interface design and ensured smooth user experience across devices.
-        Gained hands-on experience in performance optimization, debugging, and deployment using GitHub.
+        Gained practical experience in building responsive user interfaces using HTML, CSS,
+        JavaScript, and React. Learned performance optimization techniques to ensure smooth and
+        efficient web applications and improved overall user experience across devices.
       </p>
     </div>
 
     <div class="card">
-      <h3>Software Engineering Intern - Efftronics Systems</h3>
+      <h3>Software Engineering Intern - Efftronics Systems Pvt. Ltd</h3>
       <p>
-        Worked on backend development and optimization using Java and C++.
-        Applied Data Structures and Algorithms to improve performance of data processing modules.
-        Debugged and optimized existing code to handle large datasets efficiently.
+        Gained hands-on experience in backend development using Java and C++. Learned and applied
+        Data Structures and Algorithms (DSA) to improve performance and optimize data processing
+        logic for better efficiency and scalability.
       </p>
     </div>
   </section>
@@ -80,38 +85,33 @@
     <h2>Projects</h2>
 
     <div class="card">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        Developed a responsive personal portfolio using HTML, CSS, and JavaScript, featuring
+        interactive animations and a particle-based background. Integrated resume download and
+        social media links, and deployed the website using GitHub Pages.
+      </p>
+      <a href="https://mahesh-paila.github.io/portfolio/" target="_blank" rel="noopener noreferrer">View Live</a>
+    </div>
+
+    <div class="card">
       <h3>Online Quiz Application</h3>
       <p>
-        Developed an interactive quiz application using HTML, CSS, and JavaScript.
-        Implemented features like dynamic question loading, timer, and score tracking.
-        Designed a user-friendly interface for better user experience.
+        Developed an interactive quiz web app allowing users to answer multiple-choice questions.
+        Implemented dynamic question rendering, timer, and score tracking using HTML, CSS,
+        and JavaScript.
       </p>
+      <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
     </div>
 
     <div class="card">
       <h3>Customer Purchase Analysis</h3>
       <p>
-        Analyzed retail transaction data using Python (Pandas, NumPy).
-        Identified customer behavior patterns and top-selling products.
-        Created interactive dashboards using Power BI for data visualization.
+        Collected and analyzed retail transaction data using Python, Pandas, and NumPy. Identified
+        customer buying patterns and created dashboards in Power BI/Tableau to visualize revenue
+        and customer segments.
       </p>
-    </div>
-  </section>
-
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Python</span>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Java</span>
-      <span>C++</span>
-      <span>Git</span>
-      <span>DSA</span>
-      <span>Power BI</span>
-      <span>MS Excel</span>
+      <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
     </div>
   </section>
 
@@ -121,19 +121,38 @@
     <div class="card">
       <p><strong>B-Tech (Mechanical Engineering)</strong></p>
       <p>Vignan’s Institute of Information Technology</p>
-      <p>GPA: 7.23 (2021 – 2025)</p>
+      <p>GPA: 7.11 / 10 (2021 - 2025)</p>
     </div>
 
     <div class="card">
       <p><strong>Intermediate</strong></p>
       <p>Sri Chaitanya Junior College</p>
-      <p>GPA: 8.56 (2018 – 2020)</p>
+      <p>GPA: 8.56 / 10 (2018 - 2020)</p>
     </div>
 
     <div class="card">
       <p><strong>10th Class</strong></p>
       <p>Sarvagnya High School</p>
-      <p>GPA: 9.5 (2017 – 2018)</p>
+      <p>GPA: 9.5 / 10 (2017 - 2018)</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <span>Python</span>
+      <span>Java</span>
+      <span>C++</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>DSA</span>
+      <span>Power BI</span>
+      <span>MS Excel</span>
     </div>
   </section>
 
@@ -141,9 +160,9 @@
     <h2>Contact</h2>
     <p>Email: maheshpaila383@gmail.com</p>
     <p>Phone: 7032921067</p>
+    <p>LinkedIn: linkedin.com/in/maheshp703</p>
+    <p>GitHub: github.com/MAHESH-PAILA</p>
   </section>
-
-  <div class="cursor"></div>
 
   <script>
     const typingEl = document.getElementById("typing");
@@ -151,17 +170,17 @@
     if (typingEl) {
       const text = "Hi, I'm Mahesh Paila";
       let i = 0;
-      typingEl.innerHTML = "";
+      typingEl.textContent = "";
 
-      function typing() {
+      function typeText() {
         if (i < text.length) {
-          typingEl.innerHTML += text.charAt(i);
+          typingEl.textContent += text.charAt(i);
           i++;
-          setTimeout(typing, 80);
+          setTimeout(typeText, 80);
         }
       }
 
-      typing();
+      typeText();
     }
   </script>
 
@@ -178,58 +197,57 @@
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script>
-  particlesJS("particles-js", {
-    particles: {
-    number: { value: 80 },
-    color: { value: "#a855f7" },
-    shape: { type: "circle" },
-    opacity: { value: 0.6 },
-    size: { value: 3.5 },
-    line_linked: {
-      enable: true,
-      distance: 140,
-      color: "#a855f7",
-      opacity: 0.35,
-      width: 1
-    },
-    move: {
-      enable: true,
-      speed: 2,
-      direction: "none",
-      random: false,
-      straight: false,
-      out_mode: "out",
-      bounce: false
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
-        enable: true,
-        mode: "grab"
-      },
-      onclick: {
-        enable: true,
-        mode: "push"
-      },
-      resize: true
-    },
-    modes: {
-      grab: {
-        distance: 160,
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80 },
+        color: { value: "#a855f7" },
+        shape: { type: "circle" },
+        opacity: { value: 0.6 },
+        size: { value: 3.5 },
         line_linked: {
-          opacity: 0.8
+          enable: true,
+          distance: 140,
+          color: "#a855f7",
+          opacity: 0.35,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false
         }
       },
-      push: {
-        particles_nb: 4
-      }
-    }
-  },
-  retina_detect: true
-});
-</script>
-  
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab"
+          },
+          onclick: {
+            enable: true,
+            mode: "push"
+          },
+          resize: true
+        },
+        modes: {
+          grab: {
+            distance: 160,
+            line_linked: {
+              opacity: 0.8
+            }
+          },
+          push: {
+            particles_nb: 4
+          }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
 </body>
 </html>
